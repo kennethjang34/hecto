@@ -428,6 +428,8 @@ impl Row {
                 {
                     return true;
                 }
+            } else if start_with_comment {
+                return true;
             }
             return false;
         }
